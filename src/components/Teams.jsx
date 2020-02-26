@@ -8,7 +8,7 @@ class Teams extends Component {
             console.log(eachTeam.strTeamBadge)
             return(<div key={index}>    
             <Link to = {`/allTeams/${eachTeam.idTeam}`}><h1>{eachTeam.strTeam}</h1></Link>
-            <img src = {eachTeam.strTeamBadge}/>
+            <img alt="" src = {eachTeam.strTeamBadge}/>
             <p>{eachTeam.tagline}</p>
             <p>{eachTeam.contributed_by}</p>
             </div>)
