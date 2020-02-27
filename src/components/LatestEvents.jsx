@@ -23,11 +23,25 @@ class LatestEvents extends Component {
 
   showAllEvents = () => {
     let allEvents = this.state.newevents.map((eachEvent, index) => {
-      console.log(eachEvent.idEvent);
+      console.log(eachEvent);
       return (
-        <div key={index}>
-          <h2>{eachEvent.strEvent}</h2>
-        </div>
+        <Link class="event" key={index} to={"#"}>
+          <h2>
+            <Link to={`/allTeams/${eachEvent.idHomeTeam}`}>
+              {eachEvent.strHomeTeam}{" "}
+            </Link>
+            vs
+            <Link to={`/allTeams/${eachEvent.idAwayTeam}`}>
+              {" "}
+              {eachEvent.strAwayTeam}
+            </Link>
+          </h2>
+
+
+          <h2><span>
+          {eachEvent.intHomeScore} - {eachEvent.intAwayScore}
+          </span>{eachEvent.dateEvent}</h2>
+        </Link>
       );
     });
     return allEvents;
@@ -35,7 +49,7 @@ class LatestEvents extends Component {
 
   render() {
     return (
-      <div className="latest-event">
+      <div className="upcoming-event">
         {/* {this.showAllInfo()} */}
         {this.state.ready ? this.showAllEvents() : "Loading..."}
       </div>

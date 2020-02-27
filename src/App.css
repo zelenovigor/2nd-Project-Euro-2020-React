@@ -56,6 +56,7 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  font: 20px;
 }
 
 .team {
@@ -89,7 +90,7 @@ nav a {
   border: 1px solid white
 }
 .teams img{
-  width:50px;
+  width:200px;
 
 }
 .event{
@@ -116,4 +117,12 @@ nav a {
 
 .event a:hover{
   color:white;
+}
+.event span{
+  padding-right:10vw;
+}
+
+.fanart{
+width: 1280px;
+height: 720px;
 }
