@@ -46,13 +46,13 @@ class InfoPage extends Component {
              <img src = {allInfo.strFanart4}/>
 
              <h3>Banner</h3>
-             <img src = {allInfo.strBanner}/>
-
+             <img src = {allInfo.strBanner}/><br />
+            <div style={{display: "flex", justifyContent: "space-around"}}>
              <a href="https://www.uefa.com/uefaeuro/index.html"><img alt='' src="./images/webpage_128.png" className="facebook" /></a>
              <a href="https://www.facebook.com/uefacom"><img alt='' src="./images/facebook_128.png" className="facebook" /></a>
              <a href="https://twitter.com/UEFAcom"><img alt='' src="./images/twitter_128.png" className="facebook" /></a>
              <a href="https://www.youtube.com/user/UEFA"><img alt='' src="./images/youtube_128.png" className="facebook" /></a>
-
+             </div>
             </div>
         )
 

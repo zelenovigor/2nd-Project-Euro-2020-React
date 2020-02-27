@@ -56,17 +56,31 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  font: 20px;
+  font-size: 0.75em;
+  color: #551a8b;
+  text-decoration: none;
+
 }
 
 .team {
   background-color: rgb(173, 230, 227);
+  color: white;
+  text-shadow: 0 0 30px black;
+  padding: 30px;
+
 }
 
 
 .info-page {
   background-color: rgb(173, 230, 227);
+  color: white;
+  text-shadow: 0 0 30px black;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  text-align: center;
+  padding: 30px;
 }
+
 
 .upcoming-event {
   background-color: rgb(173, 230, 227);
@@ -82,16 +96,21 @@ nav{
 }
 
 nav a {
+  color: white;
   padding: 10px;
   width:20vw;
   background:coral;
   font-size: 24px;
   text-decoration: none;
-  border: 1px solid white
+  border-radius: 10px;
+  border: 1px solid white;
 }
 .teams img{
   width:200px;
 
+}
+a{
+  text-decoration: none;
 }
 .event{
   font-size: 12px;
@@ -107,16 +126,18 @@ nav a {
 }
 
 .event a{
-  color:#551a8b;
-  text-decoration: none;
+  color: white;
+  text-decoration:none;
+  text-shadow: 0 0 8px black
 }
 
 .event a:visited {
-  color: #551a8b;
+  color: white;
+  text-shadow: 0 0 8px black
 }
 
 .event a:hover{
-  color:white;
+  color:#551a8b;
 }
 .event span{
   padding-right:10vw;
@@ -125,4 +146,8 @@ nav a {
 .fanart{
 width: 1280px;
 height: 720px;
+}
+h1{
+  color: white;
+  text-shadow: 0 0 8px black;
 }
