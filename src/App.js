@@ -45,7 +45,7 @@ class App extends Component {
     return (
       <div className="App">                       
       <nav>
-      <Link to='/Home'>Home</Link>
+      <Link to='/'>Home</Link>
       <Link to='/Teams'>Teams</Link>
       <Link to='/InfoPage'>InfoPage</Link>
       <Link to='/UpcomingEvents'>UpcomingEvents</Link>
@@ -55,7 +55,7 @@ class App extends Component {
 
 
       <Switch>
-        <Route exact path='/Home' render={props => <Home/>}/>
+        <Route exact path='/' render={props => <Home/>}/>
         <Route exact path='/allTeams/:id' render={props => <Team {...props}/>} />
         <Route exact path ='/Teams' render={props => <Teams {...props} allTeams = {this.state.teams} />}/>
         <Route exact path ='/InfoPage' render={props => <InfoPage {...props} InfoPage/>}/>
