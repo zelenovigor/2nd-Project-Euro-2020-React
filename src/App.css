@@ -1,3 +1,7 @@
+*{
+  transition: all .5s;
+}
+
 .App {
   text-align: center;
 }
@@ -47,11 +51,11 @@
   background-image: url("/images/eufa2020.jpg"); */
 } 
 
-
-
-
 .teams {
   background-color: rgb(173, 230, 227);
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .team {
@@ -61,4 +65,55 @@
 
 .info-page {
   background-color: rgb(173, 230, 227);
+}
+
+.upcoming-event {
+  background-color: rgb(173, 230, 227);
+}
+
+.latest-event {
+  background-color: rgb(173, 230, 227);
+}
+
+nav{
+  display:flex;
+  justify-content: space-evenly;
+}
+
+nav a {
+  padding: 10px;
+  width:20vw;
+  background:coral;
+  font-size: 24px;
+  text-decoration: none;
+  border: 1px solid white
+}
+.teams img{
+  width:50px;
+
+}
+.event{
+  font-size: 12px;
+  text-decoration: none;
+  display:flex;
+  justify-content: space-between;
+  padding: 0 20vw 0 20vw;
+  border-bottom: 1px dashed #eee;
+}
+
+.event:hover{
+  background:coral;
+}
+
+.event a{
+  color:#551a8b;
+  text-decoration: none;
+}
+
+.event a:visited {
+  color: #551a8b;
+}
+
+.event a:hover{
+  color:white;
 }

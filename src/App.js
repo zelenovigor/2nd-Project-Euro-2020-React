@@ -13,6 +13,10 @@ import Teams from './components/Teams';
 import Team from './components/Team';
 import Home from './components/Home';
 import InfoPage from './components/InfoPage';
+import UpcomingEvents from './components/UpcomingEvents';
+import LatestEvents from './components/LatestEvents';
+
+
 
 
 class App extends Component {
@@ -40,11 +44,13 @@ class App extends Component {
   render() {
     return (
       <div className="App">                       
-
+      <nav>
       <Link to='/Home'>Home</Link>
       <Link to='/Teams'>Teams</Link>
       <Link to='/InfoPage'>InfoPage</Link>
       <Link to='/UpcomingEvents'>UpcomingEvents</Link>
+      <Link to='/LatestEvents'>LatestEvents</Link>
+      </nav>
 
 
 
@@ -53,6 +59,9 @@ class App extends Component {
         <Route exact path='/allTeams/:id' render={props => <Team {...props}/>} />
         <Route exact path ='/Teams' render={props => <Teams {...props} allTeams = {this.state.teams} />}/>
         <Route exact path ='/InfoPage' render={props => <InfoPage {...props} InfoPage/>}/>
+        <Route exact path ='/UpcomingEvents' render={props => <UpcomingEvents {...props} UpcomingEvents/>}/>
+        <Route exact path ='/LatestEvents' render={props => <LatestEvents {...props} LatestEvents/>}/>
+
 
       </Switch> 
 

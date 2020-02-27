@@ -6,7 +6,7 @@ class Teams extends Component {
     showAllTeams = () => {
         let allTeams = this.props.allTeams.map((eachTeam, index) => {
             console.log(eachTeam.strTeamBadge)
-            return(<div key={index}>    
+            return(<div key={index}     >    
             <Link to = {`/allTeams/${eachTeam.idTeam}`}><h1>{eachTeam.strTeam}</h1></Link>
             <img alt="" src = {eachTeam.strTeamBadge}/>
             <p>{eachTeam.tagline}</p>

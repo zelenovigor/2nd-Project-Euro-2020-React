@@ -3,7 +3,7 @@ import Axios from "axios";
 
 import { Link } from "react-router-dom";
 
-class UpcomingEvents extends Component {
+class LatestEvents extends Component {
   state = {
     newevents: [],
     ready: false
@@ -11,7 +11,7 @@ class UpcomingEvents extends Component {
 
   componentDidMount() {
     Axios.get(
-      `https://www.thesportsdb.com/api/v1/json/1/eventsseason.php?id=4502&s=1920`
+      `https://www.thesportsdb.com/api/v1/json/1/eventspastleague.php?id=4502`
     ).then(res => {
       console.log(res.data.events);
       this.setState({
@@ -23,18 +23,11 @@ class UpcomingEvents extends Component {
 
   showAllEvents = () => {
     let allEvents = this.state.newevents.map((eachEvent, index) => {
-      console.log(eachEvent);
+      console.log(eachEvent.idEvent);
       return (
-        <Link class="event" key={index} to={'#'} >
-          <h2>
-            <Link to={`/allTeams/${eachEvent.idHomeTeam}`}>{eachEvent.strHomeTeam} </Link>
-             vs 
-             <Link to={`/allTeams/${eachEvent.idAwayTeam}`}> {eachEvent.strAwayTeam}</Link>
-        </h2>
-
-          <h2>{eachEvent.dateEvent}</h2>
-
-        </Link>
+        <div key={index}>
+          <h2>{eachEvent.strEvent}</h2>
+        </div>
       );
     });
     return allEvents;
@@ -42,7 +35,7 @@ class UpcomingEvents extends Component {
 
   render() {
     return (
-      <div className="upcoming-event">
+      <div className="latest-event">
         {/* {this.showAllInfo()} */}
         {this.state.ready ? this.showAllEvents() : "Loading..."}
       </div>
@@ -50,4 +43,4 @@ class UpcomingEvents extends Component {
   }
 }
 
-export default UpcomingEvents;
+export default LatestEvents;

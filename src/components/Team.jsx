@@ -59,13 +59,13 @@ class Team extends Component {
             Location: {this.state.team1.data.teams[0].strStadiumLocation}
             <br />
             Fanart
-            <img alt="" src={this.state.team1.data.teams[0].strTeamFanart1} />
+            <img alt="" src={this.state.team1.data.teams[0].strTeamFanart1 || "/images/webpage_128.png"} />
             <br />
-            <img alt="" src={this.state.team1.data.teams[0].strTeamFanart2} />
+            <img alt="" src={this.state.team1.data.teams[0].strTeamFanart2 || "/images/webpage_128.png" }/>
             <br />
-            <img alt="" src={this.state.team1.data.teams[0].strTeamFanart3} />
+            <img alt="" src={this.state.team1.data.teams[0].strTeamFanart3 || "/images/webpage_128.png"} />
             <br />
-            <img alt="" src={this.state.team1.data.teams[0].strTeamFanart4} />
+            <img alt="" src={this.state.team1.data.teams[0].strTeamFanart4 || "/images/webpage_128.png"} />
             <br />
             <a
               target="blank"
