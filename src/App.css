@@ -36,3 +36,29 @@
     transform: rotate(360deg);
   }
 }
+
+.home-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(173, 230, 227);
+  /* background-image: '/images/uefa2020.jpg';
+  background-image: url("/images/eufa2020.jpg"); */
+} 
+
+
+
+
+.teams {
+  background-color: rgb(173, 230, 227);
+}
+
+.team {
+  background-color: rgb(173, 230, 227);
+}
+
+
+.info-page {
+  background-color: rgb(173, 230, 227);
+}

@@ -21,7 +21,7 @@ class Teams extends Component {
     render() {
         console.log(this.props)
         return (
-            <div>
+            <div className="teams">
                 {this.showAllTeams()}
             </div>
         );

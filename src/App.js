@@ -44,6 +44,8 @@ class App extends Component {
       <Link to='/Home'>Home</Link>
       <Link to='/Teams'>Teams</Link>
       <Link to='/InfoPage'>InfoPage</Link>
+      <Link to='/UpcomingEvents'>UpcomingEvents</Link>
+
 
 
       <Switch>
@@ -51,6 +53,7 @@ class App extends Component {
         <Route exact path='/allTeams/:id' render={props => <Team {...props}/>} />
         <Route exact path ='/Teams' render={props => <Teams {...props} allTeams = {this.state.teams} />}/>
         <Route exact path ='/InfoPage' render={props => <InfoPage {...props} InfoPage/>}/>
+
       </Switch> 
 
       

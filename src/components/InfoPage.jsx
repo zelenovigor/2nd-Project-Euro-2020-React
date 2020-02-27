@@ -22,7 +22,7 @@ class InfoPage extends Component {
       showAllInfo = () => {
         let allInfo = this.state.generalInfo[0]
         return (
-            <div>
+            <div className="info-page">
              <img src = {allInfo.strLogo}/>
              <h3>Established {allInfo.intFormedYear}</h3>
              <p>The UEFA European Championship (known informally as the Euros) is the primary association football competition contested by the senior men's national teams of the members of the Union of European Football Associations (UEFA), determining the continental champion of Europe. Held every four years since 1960, in the even-numbered year between World Cup tournaments, it was originally called the UEFA European Nations' Cup, changing to the current name in 1968. Starting with the 1996 tournament, specific championships are often referred to in the form "UEFA Euro "; this format has since been retroactively applied to earlier tournaments.<br/>
@@ -48,10 +48,10 @@ class InfoPage extends Component {
              <h3>Banner</h3>
              <img src = {allInfo.strBanner}/>
 
-             <a href="https://www.uefa.com/uefaeuro/index.html"><img alt='' src="webpage_128.png" className="facebook" /></a>
-             <a href="https://www.facebook.com/uefacom"><img alt='' src="facebook_128.png" className="facebook" /></a>
-             <a href="https://twitter.com/UEFAcom"><img alt='' src="twitter_128.png" className="facebook" /></a>
-             <a href="https://www.youtube.com/user/UEFA"><img alt='' src="youtube_128.png" className="facebook" /></a>
+             <a href="https://www.uefa.com/uefaeuro/index.html"><img alt='' src="./images/webpage_128.png" className="facebook" /></a>
+             <a href="https://www.facebook.com/uefacom"><img alt='' src="./images/facebook_128.png" className="facebook" /></a>
+             <a href="https://twitter.com/UEFAcom"><img alt='' src="./images/twitter_128.png" className="facebook" /></a>
+             <a href="https://www.youtube.com/user/UEFA"><img alt='' src="./images/youtube_128.png" className="facebook" /></a>
 
             </div>
         )
