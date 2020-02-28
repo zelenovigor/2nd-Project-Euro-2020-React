@@ -1,5 +1,5 @@
-*{
-  transition: all .5s;
+* {
+  transition: all 0.5s;
 }
 
 .App {
@@ -49,7 +49,7 @@
   background-color: rgb(173, 230, 227);
   /* background-image: '/images/uefa2020.jpg';
   background-image: url("/images/eufa2020.jpg"); */
-} 
+}
 
 .teams {
   background-color: rgb(173, 230, 227);
@@ -57,30 +57,29 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
   font-size: 0.75em;
-  color: #551a8b;
   text-decoration: none;
-
 }
 
 .team {
   background-color: rgb(173, 230, 227);
-  color: white;
-  text-shadow: 0 0 30px black;
-  padding: 30px;
-
+  color: #603fde;
+  /* text-shadow: 0 0 30px black; */
+  padding: 10px;
+  font-size: 17px;
+  line-height: 25px;
 }
-
 
 .info-page {
   background-color: rgb(173, 230, 227);
-  color: white;
-  text-shadow: 0 0 30px black;
+  color: #603fde;
+  /* text-shadow: 0 0 30px black; */
   justify-content: space-evenly;
   align-items: flex-end;
   text-align: center;
-  padding: 30px;
+  padding: 20px;
+  font-size: 20px;
+  line-height: 30px;
 }
-
 
 .upcoming-event {
   background-color: rgb(173, 230, 227);
@@ -90,64 +89,77 @@
   background-color: rgb(173, 230, 227);
 }
 
-nav{
-  display:flex;
+nav {
+  display: flex;
   justify-content: space-evenly;
 }
 
 nav a {
   color: white;
   padding: 10px;
-  width:20vw;
-  background:coral;
+  width: 20vw;
+  background: coral;
   font-size: 24px;
   text-decoration: none;
   border-radius: 10px;
   border: 1px solid white;
 }
-.teams img{
-  width:200px;
-
+.teams img {
+  width: 200px;
 }
-a{
+
+a {
   text-decoration: none;
 }
-.event{
+
+.event {
   font-size: 12px;
   text-decoration: none;
-  display:flex;
+  display: flex;
   justify-content: space-between;
   padding: 0 20vw 0 20vw;
   border-bottom: 1px dashed #eee;
 }
 
-.event:hover{
-  background:coral;
+.event:hover {
+  background: coral;
 }
 
-.event a{
-  color: white;
-  text-decoration:none;
-  text-shadow: 0 0 8px black
+.event a {
+  color: #603fde;
+  text-decoration: none;
+  /* text-shadow: 0 0 8px black */
 }
 
 .event a:visited {
+  color: #603fde;
+  /* text-shadow: 0 0 8px black */
+}
+
+.event a:hover {
   color: white;
-  text-shadow: 0 0 8px black
+}
+.event span {
+  padding-right: 10vw;
 }
 
-.event a:hover{
-  color:#551a8b;
-}
-.event span{
-  padding-right:10vw;
+.fanart {
+  width: 1280px;
+  height: 720px;
 }
 
-.fanart{
-width: 1280px;
-height: 720px;
-}
-h1{
+h1 {
   color: white;
   text-shadow: 0 0 8px black;
 }
+h2 {
+  color: #603fde;
+}
+
+/* text {
+  color: blue;
+  text-align: justify;
+  padding: 20px;
+  font-size: 20px;
+  line-height: 30px;
+} */

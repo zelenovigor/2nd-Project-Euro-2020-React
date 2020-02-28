@@ -36,6 +36,8 @@ class Team extends Component {
             <br />
             <img alt="" src={this.state.team1.data.teams[0].strTeamBadge} />
             <br />
+            <div class="text">
+
             {this.state.team1.data.teams[0].strDescriptionEN}
             <br />
             <img alt="" src={this.state.team1.data.teams[0].strTeamJersey} />
@@ -51,14 +53,12 @@ class Team extends Component {
             Stadium capacity:{" "}
             {this.state.team1.data.teams[0].intStadiumCapacity}
             <br />
-            Stadium
             <img alt="" src={this.state.team1.data.teams[0].strStadiumThumb} />
             <br />
             {this.state.team1.data.teams[0].strStadiumDescription}
             <br />
             Location: {this.state.team1.data.teams[0].strStadiumLocation}
             <br />
-            Fanart
             <img alt="" className='fanart' src={this.state.team1.data.teams[0].strTeamFanart1 || "/images/img055.jpg"} />
             <br />
             <img alt="" className='fanart' src={this.state.team1.data.teams[0].strTeamFanart2 || "/images/img099.png"} />
@@ -92,6 +92,7 @@ class Team extends Component {
               <img alt="" src="/images/instagram_128.png" className="youtubeIcon" />{" "}
             </a>
             <br />
+            </div>
           </Fragment>
         ) : (
           "Loading"
